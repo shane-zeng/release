@@ -38,5 +38,6 @@ jobs:
           HUSKY: 0
       - run: npx semantic-release
         env:
+          # 新增GH_TOKEN
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         name: Release
